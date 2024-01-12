@@ -5,7 +5,7 @@ app.use(express.json()); // middleware to parse req.body to json body
 const port = 3000;
 
 app.get('/ping', (_req, res) => {// no se pueden dejar parametros en any 
-    console.log('somoene pinged here')
+    console.log('somoene pinged here'+ " " + new Date().toDateString())
     res.send('pong');
     }
 );
